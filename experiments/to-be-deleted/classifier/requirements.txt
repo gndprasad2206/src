@@ -1,0 +1,11 @@
+PyPDF2
+fitz
+frontend
+imblearn
+nltk
+openpyxl
+pandas
+scikit-learn
+spacy
+streamlit
+xgboost
