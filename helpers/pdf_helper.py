@@ -1,28 +1,28 @@
 import PyPDF2
-import os
+# import os
 
 
-# TODO: Deprecate the below and use get_text_from_filepath(...)
-def get_text(self, filepath):
-    if filepath.endswith(".pdf") and os.path.exists(filepath):
-        with open(filepath, 'rb') as pdf_file:
-            pdf_reader = PyPDF2.PdfReader(pdf_file)
-            text = ""
-            for page_num in range(len(pdf_reader.pages)):
-                page = pdf_reader.pages[page_num]
-                text += page.extract_text()
-            return text
+# # TODO: Deprecate the below and use get_text_from_filepath(...)
+# def get_text(self, filepath):
+#     if filepath.endswith(".pdf") and os.path.exists(filepath):
+#         with open(filepath, 'rb') as pdf_file:
+#             pdf_reader = PyPDF2.PdfReader(pdf_file)
+#             text = ""
+#             for page_num in range(len(pdf_reader.pages)):
+#                 page = pdf_reader.pages[page_num]
+#                 text += page.extract_text()
+#             return text
 
 
-def get_text_from_filepath(filepath):
-    if filepath.endswith(".pdf") and os.path.exists(filepath):
-        with open(filepath, 'rb') as pdf_file:
-            pdf_reader = PyPDF2.PdfReader(pdf_file)
-            text = ""
-            for page_num in range(len(pdf_reader.pages)):
-                page = pdf_reader.pages[page_num]
-                text += page.extract_text()
-            return text
+# def get_text_from_filepath(filepath):
+#     if filepath.endswith(".pdf") and os.path.exists(filepath):
+#         with open(filepath, 'rb') as pdf_file:
+#             pdf_reader = PyPDF2.PdfReader(pdf_file)
+#             text = ""
+#             for page_num in range(len(pdf_reader.pages)):
+#                 page = pdf_reader.pages[page_num]
+#                 text += page.extract_text()
+#             return text
 
 
 def get_text_from_stream(stream):
