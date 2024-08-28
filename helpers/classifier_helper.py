@@ -2,14 +2,7 @@ import string
 import pickle
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.model_selection import train_test_split
-from sklearn.naive_bayes import MultinomialNB
-from sklearn.metrics import classification_report
-import pandas as pd
-import os
 import nltk
-import streamlit as st
 
 def run_once():
     nltk.download("stopwords")
